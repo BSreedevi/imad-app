@@ -25,7 +25,7 @@ var artcles= {
         heading: 'Article Three',
         date: 'Aug 9 2017',
         content:
-            "<p> this the content this the content            </p>"
+            "<p> this the content this the content  </p>"
     }
 };
 function createTemplate(data)
