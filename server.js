@@ -28,31 +28,34 @@ var artcles= {
             "<p> this the content this the content            </p>"
     }
 };
-var htmlTemplate = '<html>
-    <head>
-        <title>
-            $titile
-        </title>
-        <meta name= "viewport" content = "width= device-width, intial-scale=1"/>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class = "container">
-            <div>
-                <a href="/" >Home</a>
-            </div>
-            <h1>
-               $heading
-            </h1>
-            <div>
-                $date
-            </div>
-            <div>
-               $content
-            </div>
-        </div>
-    </body>
+
+var htmlTemplate = 
+'<html> \
+    <head> \
+        <title> \
+            $titile \
+        </title> \
+        <meta name= "viewport" content = "width= device-width, intial-scale=1"/> \
+        <link href="/ui/style.css" rel="stylesheet" /> \
+    </head>\
+    <body>\
+        <div class = "container">\
+            <div>\
+                <a href="/" >Home</a>\
+            </div>\
+            <h1>\
+               $heading\
+            </h1>\
+            <div>\
+                $date\
+            </div>\
+            <div>\
+               $content\
+            </div>\
+        </div>\
+    </body>\
 </html>' ;
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
