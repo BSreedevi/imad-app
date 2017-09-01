@@ -143,10 +143,10 @@ app.post('/login', function (req, res) {
         }
     });
 });
-app.get('/:articleName', function (req, res) {
+/*app.get('/:articleName', function (req, res) {
     var articleName = req.params.articleName;
   res.send(createTemplate(artcles[articleName]));
-});
+});*/
 
 
 app.get('/ui/style.css', function (req, res) {
