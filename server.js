@@ -106,7 +106,6 @@ app.post('/create-user', function (req, res) {
             res.send('user successufully created: '+username);
         }
     });
-  res.send(hashedString);
 });
 
 app.get('/:articleName', function (req, res) {
