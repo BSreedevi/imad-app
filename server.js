@@ -3,11 +3,11 @@ var morgan = require('morgan');
 var path = require('path'); 
 var Pool = require('pg').pool;
 var crypto = require('crypto');
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
 
 var app = express();
 app.use(morgan('combined'));
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 
 var artcles= {
     'article-one':{
@@ -38,7 +38,7 @@ var config = {
     password: process.env.DB_PASSWORD,
     database:	'sreedeviharigopal',
     host: 'http://db.imad.hasura-app.io',
-}
+};
 function createTemplate(data)
 {
     var title = data.title;
