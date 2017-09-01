@@ -32,6 +32,13 @@ var artcles= {
             "<p> this the content this the content  </p>"
     }
 };
+var config = {
+    user: 'sreedeviharigopal',
+    port: '5432',
+    password: process.env.DB_PASSWORD,
+    database:	'sreedeviharigopal',
+    host: 'http://db.imad.hasura-app.io',
+}
 function createTemplate(data)
 {
     var title = data.title;
@@ -83,6 +90,7 @@ app.get('/hash/:input', function (req, res) {
   res.send(hashedString);
 });
 
+var pool = new Pool(config);
 app.post('/create-user', function (req, res) {
     
     var username = req.body.username;
