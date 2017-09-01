@@ -72,7 +72,7 @@ function hash(input, salt)
 {
     // Create a hash
     var hashed = crypto.pbkdf2Sync(input, salt, 1000, 512, 'sha512');
-    return hashed.toSting('hex');
+    return hashed.toString('hex');
 }
 
 app.get('/hash/:input', function (req, res) {
