@@ -37,7 +37,7 @@ var config = {
     port: '5432',
     password: process.env.DB_PASSWORD,
     database:	'sreedeviharigopal',
-    host: 'http://db.imad.hasura-app.io',
+    host: 'db.imad.hasura-app.io'
 };
 function createTemplate(data)
 {
