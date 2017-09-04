@@ -6,6 +6,7 @@ submit.onClick = function(){
     req.onreadystatechange = function(){
         if(req.readystate === XMLHttpRequest.Done)
         {
+            alert('XMLHttpRequest');
             if(req.status === 200)
             {
                 alert('logged in successfully');
