@@ -1,4 +1,4 @@
-alert('logged in successfully');
+
 var submit = document.getElementById('submit_btn');
 submit.onClick = function(){
     // create request obj
