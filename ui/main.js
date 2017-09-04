@@ -2,6 +2,7 @@
 var submit = document.getElementById('submit_btn');
 submit.onClick = function(){
     // create request obj
+    console.log("submit.onClick");
     var req = new XMLHttpRequest();
     req.onreadystatechange = function(){
         if(req.readystate === XMLHttpRequest.Done)
